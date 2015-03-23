@@ -1,0 +1,264 @@
+		body{
+			width:100%;background:black;
+		}
+		
+		.clear{
+			clear: both;
+			height: 0px;
+		}
+		#scene{
+			/*width:960px;*/
+			width:100%;
+
+		}
+    	.item{
+	    	visibility:hidden;
+	    	width:160px;
+	    	height:119px;
+    	}
+    	.bgtrack{
+    		height:139px;
+			/*width:960px;*/
+			width:100%;
+			position:relative;
+    	}
+    	.specialMargin{
+    		margin-top:-80px;
+    	}
+		
+		/*@-webkit-keyframes animatedBackground {
+			from { background-position: left bottom; }
+			to { background-position: right bottom; }
+		}*/
+
+    	#bgtrackred{background: transparent url(../img/red.png) repeat-x left bottom;/*-webkit-animation: animatedBackground 10s linear infinite;*/}
+    	#bgtrackblue{background: transparent url(../img/blue.png) repeat-x left bottom;/*-webkit-animation: animatedBackground 10s linear infinite;*/}
+    	#bgtrackyellow{background: transparent url(../img/yellow.png) repeat-x left bottom;/*-webkit-animation: animatedBackground 10s linear infinite;*/}
+    	#bgtrackgreen{background: transparent url(../img/green.png) repeat-x left bottom;/*-webkit-animation: animatedBackground 10s linear infinite;*/}
+
+		#bgsun{
+			background:url('../img/sun_and_sky.png') repeat-x 0px 0px;
+		}
+		#bgclouds{
+			background:url('../img/clouds.png') repeat-x 0px -130px;
+			position: absolute;top: 0px;left: 0px;
+			/*width:960px;*/
+			width:100%;
+			height: 360px;
+		}
+		
+		#splash{
+			position: absolute; left: 50%;
+			width:700px;
+			height:500px;
+			margin-left:-350px;
+			-webkit-box-shadow: 6px 6px 18px rgba(0,0,0,.5);
+			-moz-box-shadow:  6px 6px 18px rgba(0,0,0,.5);
+			box-shadow:  6px 6px 18px rgba(0,0,0,.5);
+			z-index:999;
+			background:black;
+			
+		}
+		#startmark{
+			position:absolute;top:0px;left:50%;width:50px;height:600px;
+		}
+		.paloSalidaSup{
+			width: 77px;height: 147px;top: 220px;position: absolute;
+			background:url('../img/start_line_back.png') no-repeat;
+			margin-left:20px;
+
+		}
+		.paloSalidaInf{
+			width: 126px;height: 239px;top: 361px;position: absolute;z-index:998;
+			background:url('../img/start_line_front.png') no-repeat;
+			margin-left:-20px;
+
+		}
+
+		#endmark{
+			position:absolute;top:0px;left:100%;width:0px;height:600px;
+			background:red;
+
+		}
+		.paloLlegadaSup{
+			width: 77px;height: 147px;top: 220px;position: absolute;
+			background:url('../img/finish_line_back.png') no-repeat;
+			margin-left:-120px;
+
+		}
+		.paloLlegadaInf{
+			width: 126px;height: 239px;top: 361px;position: absolute;z-index:998;
+			background:url('../img/finish_line_front.png') no-repeat;
+			margin-left:-140px;
+
+		}
+
+		
+		#presentation{
+			position: absolute; 
+			width:700px;
+			height:500px;
+			z-index:1000;
+			top:0px;
+			left:0px;
+			background: black;
+			opacity:1;
+		}
+		#instructionsbox{
+			position:absolute;z-index:1002;background:black;width:700px;height:500px;
+		}
+		.instructionboxes{
+			float:left;
+			width:155px;
+			margin:0 10px 0 0;
+			position:relative;
+			background: black;
+
+		}
+		#boxtext{
+			margin-top:30px;margin-left:20px;margin-right:20px;color:white;
+		}
+		.instructionboxesTitle{
+			margin-top:50px;
+		}
+		.instructionboxesContent{
+			margin-top:20px;font-size:12px;line-height:16px;
+		}
+		.color_rojo{color:#c83c55}
+		.color_verde{color:#379373}
+		.color_azul{color:#40b8da}
+		.color_amarillo{color:#e3b452}
+
+		#playersbox{
+			position:absolute;background:black;width:700px;height:500px;
+			overflow:hidden;
+		}
+		.nameplayer{
+			position: absolute;
+			top: 84px;left: 25px;
+			width: 115px;
+			text-align: center;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			text-transform: uppercase;
+			line-height: 17px;
+		}
+
+		.fichaplayer{
+			width:167px;height:365px;position:absolute;
+		}
+		.fichaplayerRed{background:url('../img/horse_red.png') no-repeat;top:29px;left:15px}
+		.fichaplayerGreen{background:url('../img/horse_green.png') no-repeat;top:29px;left:182px}
+		.fichaplayerBlue{background:url('../img/horse_blue.png') no-repeat;top:29px;left:349px}
+		.fichaplayerYellow{background:url('../img/horse_yellow.png') no-repeat;top:29px;left:516px}
+
+		.cuadraRed{background:url('../img/horse_red.png') no-repeat;}
+		.cuadraGreen{background:url('../img/horse_green.png') no-repeat;}
+		.cuadraBlue{background:url('../img/horse_blue.png') no-repeat;}
+		.cuadraYellow{background:url('../img/horse_yellow.png') no-repeat;}
+		
+		.fichaplayerWinner{
+			margin-left:-84px;
+			left:50%;
+			top:135px;
+		}
+		
+		.scoreboard{
+			width:500px;height:35px;background:black;position:absolute;top:-40px;left:50%;margin-left:-250px;padding-top:5px;
+			-webkit-box-shadow: 6px 6px 18px rgba(0,0,0,.3);
+			-moz-box-shadow:  6px 6px 18px rgba(0,0,0,.3);
+			box-shadow:  6px 6px 18px rgba(0,0,0,.3);
+
+		}
+		
+		.nameplayerScoreboard{
+			width:110px;float:left;
+			height: 20px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+		}
+		#winnerBox{
+			position:absolute;
+			background:black;
+			width:700px;height:500px;
+			top:0px;left:50%;
+			margin-left: -350px;
+			z-index: 1000;
+			margin-top: 30px;
+			-webkit-box-shadow: 6px 6px 18px rgba(0,0,0,.5);
+			-moz-box-shadow:  6px 6px 18px rgba(0,0,0,.5);
+			box-shadow:  6px 6px 18px rgba(0,0,0,.5);
+		}
+		
+		#btnRepetir{
+			position: absolute;
+			color: white;
+			top: 460px;
+			left: 530px;
+			cursor:pointer;
+		}
+
+		/*Para la página de test keyframe*/
+
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 200% 0; }
+		}
+		.test_dimensions{
+			width:100%;
+			height:139px;
+		}
+		.test_anim{
+			background: white url(../img/red_test_2.png) repeat-x 0 0;
+			-webkit-animation: animatedBackground 10s linear infinite;
+		}
+
+
+		@-webkit-keyframes animatedPosition {
+			from { left: 0; }
+			to { left: 100%; }
+		}
+		.test_anim_2{
+			position: absolute;
+			top:0;
+			left:0;
+			background: white url(../img/red_test_2.png) repeat-x 0 0;
+			-webkit-animation: animatedPosition 10s linear infinite;
+
+		}
+
+
+		@-webkit-keyframes animatedPositionCamino {
+			to { margin-left: -1818px; }
+		}
+
+
+		.container_camino{
+			position: relative;
+			top:0;
+			left:0;
+			height: 139px;
+			width:3636px;
+			-webkit-animation: animatedPositionCamino 10s linear infinite;
+			overflow: hidden;
+		}
+
+		.camino{
+			position: absolute;
+			top:0;
+			left:0;
+			background: white url(../img/red_test.png) repeat-x 0 0;
+			width:1818px;
+			height: 139px;
+
+		}
+		.test_fixbg{
+			position: absolute;
+			top:0;
+			left:1818px;
+			background: white url(../img/red_test.png) repeat-x 0 0;
+			width:1600px; /*tamaño del viewport*/
+			height: 139px;
+		}

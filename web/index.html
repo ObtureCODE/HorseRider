@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	 
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Hípica</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/game.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+	
+	<!-- TODO : Common API -->
+	<!--<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+	<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>-->
+
+	
+	<script type='text/javascript' src='lib/jquery-1.7.2.js'></script>
+	<script src="lib/jquery-css-transform.js" type="text/javascript"></script>
+	<script src="lib/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
+	<script type='text/javascript' src='lib/jquery.jsmovie.1.4.2.js'></script>
+	<script type='text/javascript' src="lib/jquery.mockjax.js"></script>
+	<script type='text/javascript' src='lib/jquery.spritely-0.6.js'></script>
+	<script type='text/javascript' src='lib/jquery.easing.1.3.js'></script>
+	
+    <script type='text/javascript' src='lib/auto.js'></script>
+</head>
+<body>	    
+	
+	<div id="splash" class="popwindow" style="margin-top:-530px">
+        <div id="presentation" style="z-index:1003">
+        	<div style="position:absolute;color:white;top:30px;left:20px;" class="futuraBold font87">
+        		HORSE<br />
+        		RIDER
+        	</div>
+			<img src="img/obturecode_logo.png" style="position:absolute;top:440px;left:20px;" />
+			<img src="img/rainbow.png" style="position:absolute;top: 233px;left: 433px;" />
+        	
+        </div>
+        <div id="instructionsbox">
+			
+			<div id="instructions">
+			        	<div id="boxtext">
+			        		<div class="futuraBold font52">¡Arre!</div>
+			        		<div class="futuraBold font14" style="margin-top:15px;line-height:20px">Necesitas un iPhone para llevar a tu caballo<br />al otro extremo del desierto</div>
+			        		<div style="margin-top:20px">
+				        		<div class="instructionboxes color_rojo">
+				        			<div class="futuraBold font52 instructionboxesTitle">1.</div>
+				        			<div class="futuraBoldCnd font19">COGE LAS RIENDAS</div>
+				        			<div class="futuraRegular instructionboxesContent">Descárgate de la Apple Store la aplicación<br />"Obture Controller" para tu iPhone.</div>
+				        			<img src="img/app_icon.png" style="position:absolute;top: 20px;left: 73px;" />
+				        		</div>
+				        		<div class="instructionboxes color_verde">
+				        			<div class="futuraBold font52 instructionboxesTitle">2.</div>
+				        			<div class="futuraBoldCnd font19">¿PREPARADO?</div>
+				        			<div class="futuraRegular instructionboxesContent">Introduce tu nombre y dale a "Comenzar a jugar", tu caballo se pondrá en posición de salida como por arte de magia. Pueden unirse a la partida hasta cuatro jugadores.</div>
+				        			<img src="img/iphone_one.png" style="position:absolute;top: 1px;left: 71px;" />
+				        		</div>
+				        		<div class="instructionboxes color_azul">
+				        			<div class="futuraBold font52 instructionboxesTitle">3.</div>
+				        			<div class="futuraBoldCnd font19">ARREA A TU CABALLO</div>
+				        			<div class="futuraRegular instructionboxesContent">Arrea a tu caballo moviendo el teléfono de arriba a abajo como si fueran unas riendas. Cuantos más arrees, más correrá tu caballo.</div>
+				        			<img src="img/iphone_move.png" style="position:absolute;top: 7px;left: 51px;" />
+				        		</div>
+				        		<div class="instructionboxes color_amarillo">
+				        			<div class="futuraBold font52 instructionboxesTitle">4.</div>
+				        			<div class="futuraBoldCnd font19">¿A QUÉ ESPERAS?</div>
+				        			<div class="futuraRegular instructionboxesContent">Ya está, sólo queda disfrutar con tus amigos. No hay nada más que hacer.</div>
+				        		</div>
+			
+				        		<div class="clear">&nbsp;</div>
+			        		</div>
+			        		<div class="futuraBold font14" style="margin-top: 35px;line-height: 20px;width: 660px;text-align: center;">Esperando al primer jinete...</div>
+
+			        	</div>
+			        </div>
+        
+        </div>
+        
+        <div id="playersbox">
+			<div style="color:white;margin-top:25px;margin-left:20px" class="futuraBold font52">Esperando jinetes</div>
+			<div style="color:white;margin-top:15px;margin-left:20px" class="font14 futuraBold">Podéis juntaros hasta cuatro amigos para echar una carrera</div>
+			<div style="position:relative">
+				<div class="fichaplayer fichaplayerRed futuraBold font14 color_rojo">
+					<div id="nameplayerRed" class="nameplayer sinnombre"></div>
+				</div>
+				<div class="fichaplayer fichaplayerGreen futuraBold font14 color_verde" style="top: 394px;">
+					<div id="nameplayerGreen" class="nameplayer sinnombre">Curro Jiménez</div>
+				</div>
+				<div class="fichaplayer fichaplayerBlue futuraBold font14 color_azul" style="top: 394px;">
+					<div id="nameplayerBlue" class="nameplayer sinnombre">Paco</div>
+				</div>
+				<div class="fichaplayer fichaplayerYellow futuraBold font14 color_amarillo" style="top: 394px;">
+					<div id="nameplayerYellow" class="nameplayer sinnombre">π</div>
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div>
+        </div>
+        
+        
+    </div>
+    
+
+	
+    <div id="scene" style="height:600px;overflow:hidden">
+    	<div id="winnerBox" style="margin-top:-530px">
+			<div style="color:white;margin-top:25px;margin-left:20px" class="futuraBold font52">¡Ya tenemos ganador!</div>
+			<div class="fichaplayer fichaplayerWinner futuraBold font14">
+					<div id="nameplayerWinner" class="nameplayer"></div>
+			</div>
+			<div id="btnRepetir" class="futuraBold font19">Jugar otra vez</div>
+		</div>
+    	<div id="playersAdded" class="scoreboard">
+    		<div style="margin-right:10px;margin-left:10px;" class="color_rojo font19 futuraBold sinnombreScoreboard nameplayerScoreboard"></div>
+    		<div style="margin-right:10px;" class="color_verde font19 futuraBold sinnombreScoreboard nameplayerScoreboard"></div>
+    		<div style="margin-right:10px;" class="color_azul font19 futuraBold sinnombreScoreboard nameplayerScoreboard"></div>
+    		<div  class="color_amarillo font19 futuraBold sinnombreScoreboard nameplayerScoreboard"></div>
+			
+    	</div>
+    	<div id="startmark">
+    		<div class="paloSalidaSup"></div>
+    		<div class="paloSalidaInf"></div>
+    	</div>
+    	
+    	<div id="endmark" style="display:none">
+    		<div class="paloLlegadaSup">&nbsp;</div>
+    		<div class="paloLlegadaInf">&nbsp;</div>
+    	</div>
+		
+    	<div id="bgclouds"></div>
+    	<div id="bgsun" style="padding-top: 284px;">
+	    	<div class="bgtrack" id="bgtrackred">
+		   		<div class="sinjinete item itemred"></div>
+	    	</div>
+			<div class="bgtrack specialMargin" id="bgtrackgreen">
+				<div class="sinjinete item itemgreen"></div>
+			</div>
+			<div class="bgtrack specialMargin" id="bgtrackblue">
+				<div class="sinjinete item itemblue"></div>
+			</div>
+			<div class="bgtrack specialMargin" id="bgtrackyellow">
+				<div class="sinjinete item itemyellow"></div>
+			</div>
+    	
+    	</div>
+
+    </div>
+
+    
+
+	<script type='text/javascript' src='lib/game.js'></script>
+    
+
+</body>
+</html>
