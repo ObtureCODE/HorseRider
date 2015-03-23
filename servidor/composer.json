@@ -1,0 +1,20 @@
+{
+    "name": "obturecode/horserider",
+    "description": "Juego de los caballos",
+    "autoload": {
+        "psr-0": {
+            "Horserider": "src"
+        }
+    },
+    "require": {
+        "cboden/ratchet": "0.2.*"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Obture Code",
+            "email": "info@obturecode.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

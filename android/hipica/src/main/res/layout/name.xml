@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <EditText 	android:layout_width="335dp"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/EditText"
+          		android:textSize="20dp"
+				android:textColor="@android:color/white"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+				android:background="@drawable/backwithborder"
+				android:singleLine="true" 
+				android:gravity="center"/>
+    
+	<TextView 	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:id="@+id/TextView" 
+        		android:text="@string/nombreTexto"
+        		android:layout_centerHorizontal="true"
+        		android:layout_alignParentTop="true"
+        		android:layout_marginTop="80dp"
+        		android:textSize="16dp"
+				android:textColor="@android:color/white"/>
+    
+    <Button 	android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+		        android:text="@string/listo"
+		        android:id="@+id/ButtonListo"
+		        android:textColor="@android:color/black"
+				android:textSize="35dp"
+				android:background="#419370"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="15dp"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:paddingTop="5dp"
+				android:paddingBottom="4dp"
+				android:paddingLeft="130dp"
+				android:paddingRight="130dp"/>
+    
+    <RelativeLayout android:id="@+id/RelativeLayout" 
+        			android:layout_width="300dp"
+	       			android:layout_height="200dp"
+	       			android:background="#ffffff"
+	       			android:layout_centerHorizontal="true"
+	       			android:layout_centerVertical="true"
+	       			android:visibility="invisible">
+	       			
+        	<TextView 	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:id="@+id/TextView2" 
+		        		android:text="@string/buscando"
+		        		android:layout_centerHorizontal="true"
+		        		android:layout_alignParentTop="true"
+		        		android:layout_marginTop="40dp"
+		        		android:textSize="20dp"
+						android:textColor="@android:color/black"/>
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/RelativeLayout2" 
+        			android:layout_width="300dp"
+	       			android:layout_height="200dp"
+	       			android:background="#ffffff"
+	       			android:layout_centerHorizontal="true"
+	       			android:layout_centerVertical="true"
+	       			android:visibility="invisible">
+	       			
+        	<TextView 	android:layout_width="wrap_content"
+		        		android:layout_height="wrap_content"
+		        		android:id="@+id/TextView3" 
+		        		android:text="@string/esperando"
+		        		android:layout_centerHorizontal="true"
+		        		android:layout_alignParentTop="true"
+		        		android:layout_marginTop="40dp"
+		        		android:layout_marginLeft="20dp"
+		        		android:layout_marginRight="20dp"
+		        		android:textSize="20dp"
+						android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+
+Para iniciar con el autolader hay que ejecutar "php composer.phar update" para que prepare las dependencias.
+
+para arrancar el servidor, "nohup bin/server.php &"
+

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal">
+	
+    <ViewFlipper android:id="@+id/ViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout android:layout_width="fill_parent"
+    					android:layout_height="fill_parent" >
+
+	    		<TextView android:id="@+id/info1texto1"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/uno"
+						android:textSize="60dp"
+						android:textColor="@android:color/white"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="25dp" />
+    			
+    			<TextView android:id="@+id/info1texto2"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_below="@+id/info1texto1"
+			        	android:layout_marginTop="5dp"
+			        	android:layout_marginLeft="25dp"
+        				android:text="@string/info1texto2" 
+						android:layout_toLeftOf="@+id/info1imagen"
+						android:textSize="15dp"
+						android:textColor="@android:color/white"
+						android:lineSpacingMultiplier="1.2"/>
+	    		
+			    <ImageView
+			        android:id="@+id/info1imagen"
+			        android:layout_width="90dp"
+			        android:layout_height="90dp"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginRight="25dp"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/tuto_computer" />
+    			
+    			<TextView android:id="@+id/info1texto3"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_below="@id/info1texto2"
+			        	android:layout_marginTop="15dp"
+			        	android:layout_marginLeft="25dp"
+			        	android:paddingBottom="15dp"
+        				android:text="@string/info1texto3"
+        				android:layout_toLeftOf="@id/info1imagen"
+						android:textSize="15dp"
+						android:textColor="@android:color/white"
+						android:lineSpacingMultiplier="1.2"/>
+    			
+    			<ImageView
+			        android:id="@+id/info1flechaDerecha"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="25dp"
+			        android:layout_alignBottom="@id/info1texto3"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/right_arrow" />
+    	</RelativeLayout>
+    	
+        <RelativeLayout android:layout_width="fill_parent"
+    					android:layout_height="fill_parent" >
+	
+	    		<TextView android:id="@+id/info2texto1"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/dos"
+						android:textSize="60dp"
+						android:textColor="@android:color/white"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="25dp"/>
+	    		
+			    <ImageView
+			        android:id="@+id/info2imagen"
+			        android:layout_width="90dp"
+			        android:layout_height="90dp"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginRight="25dp"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/tuto_iphone" />
+    			
+    			<TextView android:id="@+id/info2texto2"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_below="@id/info2texto1"
+			        	android:layout_marginTop="5dp"
+			        	android:layout_marginLeft="25dp"
+        				android:text="@string/info2texto2"
+						android:layout_toLeftOf="@id/info2imagen"
+						android:textSize="15dp"
+						android:textColor="@android:color/white"
+						android:lineSpacingMultiplier="1.2"
+						android:paddingBottom="75dp"/>
+    			
+    			<ImageView
+			        android:id="@+id/info2flechaIzquierda"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="25dp"
+			        android:layout_alignBottom="@id/info2texto2"
+			        android:layout_alignParentLeft="true"
+			        android:src="@drawable/left_arrow" />
+    			
+    			<ImageView
+			        android:id="@+id/info2flechaDerecha"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="25dp"
+			        android:layout_alignBottom="@id/info2texto2"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/right_arrow" />
+    	</RelativeLayout>
+    	
+        <RelativeLayout android:layout_width="fill_parent"
+    					android:layout_height="fill_parent" >
+	
+	    		<TextView android:id="@+id/info3texto1"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/tres"
+						android:textSize="60dp"
+						android:textColor="@android:color/white"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="25dp"/>
+	    		
+			    <ImageView
+			        android:id="@+id/info3imagen"
+			        android:layout_width="90dp"
+			        android:layout_height="90dp"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginRight="25dp"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/tuto_arre" />
+    			
+    			<TextView android:id="@+id/info3texto2"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_below="@id/info3texto1"
+			        	android:layout_marginTop="5dp"
+			        	android:layout_marginLeft="25dp"
+        				android:text="@string/info3texto2"
+						android:layout_toLeftOf="@id/info3imagen"
+						android:textSize="15dp"
+						android:textColor="@android:color/white"
+						android:lineSpacingMultiplier="1.2"
+						android:paddingBottom="95dp"/>
+    			
+    			<ImageView
+			        android:id="@+id/info3flechaIzquierda"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="25dp"
+			        android:layout_alignBottom="@id/info3texto2"
+			        android:layout_alignParentLeft="true"
+			        android:src="@drawable/left_arrow" />
+    			
+    			<ImageView
+			        android:id="@+id/info3flechaDerecha"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="25dp"
+			        android:layout_alignBottom="@id/info3texto2"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/right_arrow" />
+    	</RelativeLayout>
+    	
+        <RelativeLayout android:layout_width="fill_parent"
+    					android:layout_height="fill_parent" >
+	
+	    		<TextView android:id="@+id/info4texto1"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:text="@string/monta"
+						android:textSize="60dp"
+						android:textColor="@android:color/white"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="25dp"/>
+	    		
+	    		<ImageView
+			        android:id="@+id/info4imagen"
+			        android:layout_width="160dp"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:src="@drawable/tuto_horse"
+			        android:adjustViewBounds="true"
+			        android:scaleType="fitCenter"/>
+    			
+    			<TextView android:id="@+id/info4texto2"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:layout_below="@id/info4texto1"
+			        	android:layout_marginTop="5dp"
+			        	android:layout_marginLeft="25dp"
+        				android:text="@string/info4texto2"
+						android:textSize="15dp"
+						android:textColor="@android:color/white"
+						android:layout_toLeftOf="@id/info4imagen"
+						android:lineSpacingMultiplier="1.2"
+						android:paddingBottom="75dp"/>
+    			
+    			<ImageView
+			        android:id="@+id/info4flechaIzquierda"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="25dp"
+			        android:layout_alignBottom="@id/info4texto2"
+			        android:layout_alignParentLeft="true"
+			        android:src="@drawable/left_arrow" />
+    	</RelativeLayout>
+    </ViewFlipper>
+    
+    <Button android:id="@+id/ButtonArre"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/arre" 
+			android:textColor="@android:color/black"
+			android:textSize="35dp"
+			android:background="#419370"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="15dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:paddingTop="5dp"
+			android:paddingBottom="4dp"
+			android:paddingLeft="130dp"
+			android:paddingRight="130dp"/>
+</RelativeLayout>

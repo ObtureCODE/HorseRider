@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Horse Rider</string>
+    <string name="uno">1.</string>
+    <string name="dos">2.</string>
+    <string name="tres">3.</string>
+    <string name="monta">¡Monta!</string>
+    <string name="arre">¡Arre!</string>
+    <string name="info1texto2">¿Listo para ser el mejor jinete? Te vamos a explicar cómo.</string>
+    <string name="info1texto3">En tu ordenador de sobremesa o Smart TV, conéctate a http://horserider.obturecode.com</string>
+    <string name="info2texto2">Ya aquí, cuando le des a ¡Arre! introduce tu nombre para ver tu caballo aparecer en la pantalla grande.</string>
+    <string name="info3texto2">Arrea a tu caballo con tu teléfono para correr más rápido que tus amigos.</string>
+    <string name="info4texto2">Puedes correr con tres amigos más en esta apasionante carrera a través del desierto. ¿Estás preparado?</string>
+
+    <string name="BASE_URL">http://horserider.obturecode.com</string>
+    
+    <string name="hello">Hello World, HipicaActivity!</string>
+    <string name="error">Error</string>
+    <string name="generic_error_msg">Upps&#8230; algo ha ido mal. Por favor, vuelve a intentarlo.</string>
+    <string name="internet_error_msg">Revisa tu conexión a Internet.</string>
+    <string name="already_started_error_msg">Parece que la partida ya ha empezado. ¡Sé más rápido la próxima vez!</string>
+    <string name="game_lost_error_msg">La partida se ha perdido</string>
+	<string name="nombreTexto">Introduce tu nombre</string>
+    <string name="listo">Listo</string>
+    <string name="buscando">Buscando Pantalla</string>
+    <string name="esperando">Esperando a que empiece la partida&#8230;</string>
+    <string name="name_empty">El nombre no puede estar vacío!</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="empezar_partida">Empezar Partida</string>
+    <string name="cuando_todos_esten_listos">Cuando todos los jugadores estén listos, pulsa EMPEZAR para comenzar la partida.</string>
+    <string name="empezar">EMPEZAR</string>
+    <string name="la_partida_se_ha_acabado">La partida se ha acabado. pulsa aceptar para volver atrás.</string>
+    <string name="partida_terminada">Partida terminada!</string>
+</resources>
